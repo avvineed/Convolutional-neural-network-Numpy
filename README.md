@@ -1,14 +1,26 @@
-# Basic Neural Network
-On the process of learning Deeplearning, i built Basic Neural Network to get full understanding without help of ML library.
+# Convolutional Neural Network 
+On the process of learning Deeplearning, i built Basic Convolutional Nural Network to get full understanding without help of ML library.
 
 ## Overview
-A neural network written in Python, consisting of a single neuron that uses back propagation to learn.
+A Convolutional Neural Network written in Python, consisting of a single neuron that uses back propagation to learn.
+Just three layers are created which are convolution (conv for short), ReLU, and max pooling. The major steps involved are as follows:
+
+1. Reading the input image.
+2. Preparing filters.
+3. Conv layer: Convolving each filter with the input image.
+4. ReLU layer: Applying ReLU activation function on the feature maps (output of conv layer).
+5. Max Pooling layer: Applying the pooling operation on the output of ReLU layer.
+6. Stacking conv, ReLU, and max pooling layers.
+
+You can have quick review with [juputer notebook file](https://github.com/avvineed/Convolutional-neural-network-Numpy/blob/master/CNN.ipynb).
 
 ## Dependencies
 
-None! Just numpy.
+* numpy.
+* skimage.data (Just to Fetch image Data)
+* matplotlib (For Displaying Output)
 
 ## Credits
--  [Milo Harper](https://github.com/miloharper) [blog](https://medium.com/technology-invention-and-more/how-to-build-a-simple-neural-network-in-9-lines-of-python-code-cc8f23647ca1).
-- blog post by [Andrew Trask](https://iamtrask.github.io/2015/07/12/basic-python-network/)
-- [Siraj Raval](https://github.com/llSourcell) for his [video](https://www.youtube.com/watch?v=h3l4qz76JhQ)
+-  [Ahmed Gad](https://github.com/ahmedfgad/) [blog](https://www.kdnuggets.com/2018/04/building-convolutional-neural-network-numpy-scratch.html).
+- [Andrew Ng](https://www.coursera.org/lecture/convolutional-neural-networks/)
+- [Siraj Raval](https://github.com/llSourcell) for his [video](https://www.youtube.com/watch?v=FTr3n7uBIuE&t=1782s)
